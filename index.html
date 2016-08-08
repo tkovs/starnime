@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="css/w3.css"  />
 
         <title>Starnime</title>
+
+        <script>
+		function myFunction() {
+			var x = document.getElementById("demo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		</script>
     </head>
 
     <body>
@@ -15,8 +26,20 @@
                 <div class="superanime-logo"></div>
             </div>
             <div> <!-- Menu -->
-                <ul class="w3-navbar w3-border w3-light-day">
+                <ul class="w3-navbar w3-border w3-light-day w3-left-align">
+                    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                        <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+                    </li>
                     <li><a href="#" class="w3-text-teal">Home</a></li>
+                    <li class="w3-hide-small"><a href="#">Animes</a></li>
+                    <li class="w3-hide-small"><a href="#">Sobre nós</a></li>
+                    <li class="w3-hide-small"><a href="#">Entre em contato</a></li>
+                </ul>
+            </div>
+
+            <div id="demo" class="w3-hide w3-hide-large w3-hide-medium"> <!-- Menu collapsed -->
+                <ul class="w3-navbar w3-left-align">
+                    <li class="w3-hide-medium w3-hide-large"></li>
                     <li><a href="#">Animes</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Entre em contato</a></li>
