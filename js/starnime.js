@@ -7,3 +7,22 @@ function exibir_menu() {
     }
 }
 
+function validate() {
+	if (!has_text("nome"))      return false;
+	if (!has_text("sobrenome")) return false;
+	if (!has_text("mensagem"))  return false;
+
+	return true;
+}
+
+function has_text(id) {
+	obj = document.getElementById(id).value;
+
+	if (obj == "" || obj == null) {
+		document.getElementById("erro").innerHTML = "Erro no campo " + id;
+		document.getElementById("alert").style.display = "block";
+		return false;
+	}
+
+	return true;
+}
