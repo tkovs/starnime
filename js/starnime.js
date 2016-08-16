@@ -11,6 +11,7 @@ function validate() {
 	if (!has_text("nome"))      return false;
 	if (!has_text("sobrenome")) return false;
 	if (!has_text("mensagem"))  return false;
+	if (!has_text("email"))  return false;
 
 	return true;
 }

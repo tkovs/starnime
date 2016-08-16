@@ -51,22 +51,27 @@
 				<form onsubmit="return validate()" class="w3-container" action="obrigado.html">
 					<h2>Contate-nos</h2>
 					<p>
-						<label>Nome</label>
+						<label class="w3-label">Nome</label>
 						<input class="w3-input" type="text" id="nome"/>
 					</p>
 
 					<p>
-						<label>Sobrenome</label>
+						<label class="w3-label">Sobrenome</label>
 						<input class="w3-input" type="text" id="sobrenome"/>
 					</p>
 
 					<p>
-						<label>Mensagem</label>
+						<label class="w3-label">Email</label>
+						<input class="w3-input" type="text" id="email"/>
+					</p>
+
+					<p>
+						<label class="w3-label">Mensagem</label>
 						<textarea id="mensagem"></textarea>
 					</p>
 
 					<p>
-						<label>Gênero</label><br />
+						<label class="w3-label">Gênero</label><br />
 						<input type="radio" name="genero" value="homem"> Homem	
 						<input type="radio" name="genero" value="mulher"> Mulher	
 						<input type="radio" name="genero" value="anonimo" checked> Anônimo<br />
@@ -74,11 +79,11 @@
 
 					<p>
 						<input type="checkbox" name="resposta" value="sim"> 
-						<label>Receber notificações: </label>
+						<label class="w3-label">Receber notificações: </label>
 					</p>
 
 					<p>
-						<label id="valor-da-chave">Idade: 0	</label>	
+						<label class="w3-label" id="valor-da-chave">Idade: 0	</label>	
 						<input type="range"
 						name="points"
 						value="0"
