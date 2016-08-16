@@ -37,6 +37,55 @@
         </div>
 
         <div class="content w3-container">
+            <div class="w3-row-padding w3-container">
+                <div class="w3-quarter">
+                    &nbsp; <!-- Para ficar sem conteúdo mas com grid funcionando-->
+                </div>
+
+                <div class="w3-half">
+                    <form class="w3-container" action="pages/home.html">
+                        <h2>Contate-nos</h2>
+                        <p>
+                        <label>Nome</label>
+                        <input class="w3-input" type="text" required/>
+                        </p>
+
+                        <p>
+                        <label>Sobrenome</label>
+                        <input class="w3-input" type="password" required/>
+                        </p>
+
+                        <p>
+                        <label>Mensagem</label>
+                        <textarea></textarea>
+                        </p>
+
+                        <p>
+                            <label>Gênero</label><br />
+                            <input type="radio" name="genero" value="homem"> Homem  
+                            <input type="radio" name="genero" value="mulher"> Mulher  
+                            <input type="radio" name="genero" value="anonimo" checked> Anônimo<br />
+                        </p>
+
+                        <p>
+                        <label>Receber notificações: </label>
+                        <input type="checkbox" name="resposta" value="sim"> Sim<br />
+                        </p>
+
+                        <p>
+                            <label id="valor-da-chave">Idade: 0  </label>  
+                            <input type="range" name="points" value="0" min="6" max="100"  onload="document.getElementById('valor-da-chave').innerHTML =  'Idade: ' + this.value " oninput="document.getElementById('valor-da-chave').innerHTML =  'Idade: ' + this.value ">
+                        </p>
+
+                        <button class="w3-btn-block w3-teal">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="w3-quarter">
+                    &nbsp; <!-- Para ficar sem conteúdo mas com grid funcionando-->
+                </div>
+            </div>
+        </div>
 
         </div>
 
